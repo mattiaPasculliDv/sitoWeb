@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <!-- META TAG -->
+    <meta name="author" content="GestionApp di Mattia Pasculli e Andrea Buonuomo"> <!-- Autore del documento -->
+    <meta charset="UTF-8"> <!-- Codifica dei caratteri -->
+    <meta name="keywords" content="GestionApp, Contatti, Assistenza, Supporto Clienti, ERP">
+    <!-- Parole chiave attinenti alla pagina di conferma contatto -->
+    <meta name="description"
+        content="Grazie per averci contattato! Il nostro team di supporto GestionApp ti risponderà al più presto.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Larghezza della pagina e scala per dispositivi mobili -->
+
+    <!-- Titolo della scheda -->
+    <title>Grazie per il tuo messaggio - GestionApp</title>
+
+    <!-- Collegamento ai fogli di stile CSS -->
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    <!-- Collegamento allo script JavaScript -->
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+    <!-- SEZIONE HEADER -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="../images/logo.jpg" alt="Logo GestionApp - Software ERP">
+            </a>
+        </div>
+        <div class="demo">
+            <!-- Trasforma il link in un bottone -->
+            <a id="btn-demo" class="btn" href="../erpDemo/templates/index.html">PROVA DEMO GRATUITA</a>
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="iNostriPrezzi.html">I Nostri Prezzi</a></li>
+            <li><a href="chiSiamo.html">Chi Siamo</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contattaci.html">Contattaci</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="grazie">
+        <h1 class="grazieTitolo">Grazie per averci contattato!</h1>
+        <h2 class="grazieSottotitolo">Il nostro team ti risponderà il prima possibile.</h2>
+        <a href="index.html" class="btn">Torna all'home page</a>
+    </main>
+
+    <!-- SEZIONE FOOTER -->
+    <footer>
+        <div class="footer-left">
+            <p>GestionApp - Software ERP &copy;</p>
+            <p>La gestione della tua azienda in un click!</p>
+            <p>Partita IVA: IT0123456789</p>
+            <p>Bari, Italia</p>
+            <p>Email: <a href="mailto:gestionapp@pec.it">gestionapp@pec.it</a></p>
+        </div>
+        <div class="footer-center">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="iNostriPrezzi.html">I Nostri Prezzi</a></li>
+                <li><a href="chiSiamo.html">Chi Siamo</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contattaci.html">Contattaci</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <form action="#" method="POST">
+                <label for="newsletter">Iscriviti alla nostra newsletter:</label>
+                <input type="email" id="newsletter" name="newsletter" placeholder="La tua email" required
+                    aria-label="Inserisci la tua email per iscriverti alla newsletter">
+                <button type="submit">Iscriviti</button>
+            </form>
+        </div>
+    </footer>
+
+</body>
+
+</html>

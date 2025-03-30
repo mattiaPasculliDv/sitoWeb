@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <!-- META TAG -->
+    <meta name="author" content="GestionApp di Mattia Pasculli e Andrea Buonuomo"> <!-- Autore del documento -->
+    <meta charset="UTF-8"> <!-- Codifica dei caratteri -->
+    <meta name="keywords"
+        content="GestionApp, ERP, software gestionale, software fatturazione, gestione aziendale, supply chain, risorse umane, analisi dati">
+    <!-- Parole chiave -->
+    <meta name="description"
+        content="GestionApp è il software ERP innovativo che semplifica la gestione aziendale, ottimizza i processi e migliora l'efficienza operativa. Scopri la soluzione su misura per il tuo business!">
+    <!-- Descrizione del sito -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Larghezza della pagina e scala per dispositivi mobili -->
+
+    <title>GestionApp - Software ERP</title> <!-- Titolo della scheda -->
+
+    <!-- Collegamento ai fogli di stile CSS -->
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <!-- SEZIONE HEADER -->
+    <header>
+        <div class="logo">
+            <a href="index.html" aria-label="Vai alla homepage di GestionApp">
+                <img src="../images/logo.jpg" alt="Logo di GestionApp, software ERP per la gestione aziendale">
+            </a>
+        </div>
+    </header>
+
+
+    <!-- MAIN -->
+    <main class="grazie">
+        <h1 class="grazieTitolo">Grazie per aver inserito la fattura!</h1>
+        <h2 class="grazieSottotitolo">Puoi visualizzarla nella tua dashboard.</h2>
+        <a href="index.html" class="btn">Torna all'home page</a>
+    </main>
+
+    <!-- SEZIONE FOOTER -->
+    <footer>
+        <div class="footer-left">
+            <p>GestionApp - SoftwareERP &copy; 2025</p>
+            <p>La gestione della tua azienda in un click!</p>
+            <p>Partita IVA: IT0123456789</p>
+            <p>Bari, Italia</p>
+            <p>Email: <a href="mailto:gestionapp@pec.it"
+                    aria-label="Invia un'email a gestionapp@pec.it">gestionapp@pec.it</a></p>
+        </div>
+        <div class="footer-right">
+            <form action="../../templates/grazie.html" method="POST">
+                <label for="newsletter">Iscriviti alla nostra newsletter:</label>
+                <input type="email" id="newsletter" name="newsletter" placeholder="La tua email" required
+                    aria-label="Inserisci il tuo indirizzo email per iscriverti alla newsletter">
+                <button type="submit">Iscriviti</button>
+            </form>
+        </div>
+    </footer>
+</body>
+
+</html>

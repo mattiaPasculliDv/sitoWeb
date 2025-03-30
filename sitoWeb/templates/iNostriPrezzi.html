@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <!-- META TAG -->
+    <meta name="author" content="GestionApp di Mattia Pasculli e Andrea Buonuomo"> <!-- Autore del documento -->
+    <meta charset="UTF-8"> <!-- Codifica dei caratteri -->
+    <meta name="keywords"
+        content="ERP, software gestionale, fatturazione elettronica, gestione aziendale, piani ERP, prezzi ERP, GestionApp">
+    <!-- Parole chiave più pertinenti -->
+    <meta name="description"
+        content="Scopri i piani tariffari di GestionApp! Confronta le nostre soluzioni ERP per la gestione aziendale e scegli quella più adatta alle tue esigenze.">
+    <!-- Descrizione migliorata e più chiara -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Larghezza della pagina e scala per dispositivi mobili -->
+
+    <!-- Titolo della scheda -->
+    <title>GestionApp - I nostri prezzi</title>
+
+    <!-- Collegamento ai fogli di stile CSS -->
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <!-- SEZIONE HEADER -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="../images/logo.jpg" alt="Logo GestionApp - Software ERP per aziende">
+            </a>
+        </div>
+        <div class="demo">
+            <!-- Trasforma il link in un bottone -->
+            <a id="btn-demo" class="btn" href="../erpDemo/templates/index.html">PROVA DEMO GRATUITA</a>
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="iNostriPrezzi.html">I Nostri Prezzi</a></li>
+            <li><a href="chiSiamo.html">Chi Siamo</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contattaci.html">Contattaci</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+        <h1 class="h1-styled">I NOSTRI PREZZI</h1>
+
+        <section class="prezzi">
+            <h2>Piani e Prezzi</h2>
+
+            <!-- Contenitore dei piani tariffari -->
+            <div class="pianiTariffari">
+                <!-- Piano 1 -->
+                <div class="pianoTariffario">
+                    <h3 class="nomePiano">Piano Basic</h3>
+                    <ul>
+                        <li><strong>Fatturazione Elettronica</strong>: fino a 200 fatture al mese</li>
+                        <li><strong>Gestione finanziaria:</strong> Contabilità generale, gestione entrate e uscite,
+                            bilanci e report</li>
+                        <li><strong>Gestione delle imposte:</strong> Imposte e dichiarazioni fiscali</li>
+                        <li><strong>Gestione dell'inventario:</strong> Tracciamento scorte, fornitori e acquisti</li>
+                    </ul>
+                    <p class="prezzo">49&euro; al mese</p>
+                    <div class="overlay">
+                        <a href="contattaci.html" class="btn-discover">Scopri di più</a>
+                    </div>
+                </div>
+
+                <!-- Piano 2 -->
+                <div class="pianoTariffario piano-premium">
+                    <h3 class="nomePiano">Piano Premium</h3>
+                    <ul>
+                        <li><strong>Fatturazione Elettronica</strong>: fino a 500 fatture al mese</li>
+                        <li><strong>Gestione finanziaria</strong> avanzata con analisi approfondite</li>
+                        <li><strong>Gestione delle risorse umane:</strong> Reclutamento, paghe, gestione presenze</li>
+                        <li><strong>Gestione della produzione:</strong> Pianificazione e controllo qualità</li>
+                    </ul>
+                    <p class="prezzo">149&euro; al mese</p>
+                    <div class="overlay">
+                        <a href="contattaci.html" class="btn-discover">Scopri di più</a>
+                    </div>
+                </div>
+
+                <!-- Piano 3 -->
+                <div class="pianoTariffario">
+                    <h3 class="nomePiano">Piano Enterprise</h3>
+                    <ul>
+                        <li><strong>Fatturazione Elettronica</strong>: fatture illimitate</li>
+                        <li><strong>Gestione finanziaria completa</strong> con reportistica avanzata</li>
+                        <li><strong>Gestione delle risorse umane:</strong> Gestione completa dipendenti e formazione
+                        </li>
+                        <li><strong>Gestione della supply chain</strong> e ottimizzazione fornitori</li>
+                    </ul>
+                    <p class="prezzo">200&euro; al mese</p>
+                    <div class="overlay">
+                        <a href="contattaci.html" class="btn-discover">Scopri di più</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- SEZIONE FOOTER -->
+    <footer>
+        <div class="footer-left">
+            <p>GestionApp - Software ERP &copy;</p>
+            <p>La gestione della tua azienda in un click!</p>
+            <p>Partita IVA: IT0123456789</p>
+            <p>Bari, Italia</p>
+            <p>Email: <a href="mailto:gestionapp@pec.it">gestionapp@pec.it</a></p>
+        </div>
+        <div class="footer-center">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="iNostriPrezzi.html">I Nostri Prezzi</a></li>
+                <li><a href="chiSiamo.html">Chi Siamo</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contattaci.html">Contattaci</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <form action="../templates/grazie.html" method="POST">
+                <label for="newsletter">Iscriviti alla nostra newsletter:</label>
+                <input type="email" id="newsletter" name="newsletter" placeholder="La tua email" required
+                    aria-label="Inserisci la tua email per iscriverti alla newsletter">
+                <button type="submit">Iscriviti</button>
+            </form>
+        </div>
+    </footer>
+</body>
+
+</html>

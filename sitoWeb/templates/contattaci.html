@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <!-- META TAG -->
+    <meta name="author" content="GestionApp di Mattia Pasculli e Andrea Buonuomo"> <!-- Autore del documento -->
+    <meta charset="UTF-8"> <!-- Codifica dei caratteri -->
+    <meta name="keywords"
+        content="ERP, Software Gestionale, Software Fatturazione, Gestionale ERP, Contattaci, Supporto Gestionale">
+    <!-- Parole chiave migliorate -->
+    <meta name="description"
+        content="Hai bisogno di assistenza o informazioni su GestionApp? Contattaci per supporto, dettagli sui piani tariffari o per richiedere una demo personalizzata.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Larghezza della pagina e scala per dispositivi mobili -->
+
+    <!-- Titolo della scheda -->
+    <title>GestionApp - Contattaci</title>
+
+    <!-- Collegamento ai fogli di stile CSS -->
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    <!-- Collegamento al file JavaScript -->
+    <script src="../js/scripts.js" defer></script>
+
+</head>
+
+<body>
+    <!-- SEZIONE HEADER -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="../images/logo.jpg" alt="Logo GestionApp - Soluzioni ERP">
+            </a>
+        </div>
+        <div class="demo">
+            <!-- Trasforma il link in un bottone -->
+            <a id="btn-demo" class="btn" href="../erpDemo/templates/index.html">PROVA DEMO GRATUITA</a>
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="iNostriPrezzi.html">I Nostri Prezzi</a></li>
+            <li><a href="chiSiamo.html">Chi Siamo</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contattaci.html">Contattaci</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+        <h1 class="h1-styled">CONTATTACI</h1>
+        <section class="contactForm">
+            <!-- Aria Label fornisce un supporto ai non vedenti migliorando l'accesibilità-->
+            <form id="contact-form" action="grazie.html" method="post">
+                <div class="inputGroup">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required aria-label="Inserisci il tuo nome">
+                </div>
+                <div class="inputGroup">
+                    <label for="cognome">Cognome</label>
+                    <input type="text" id="cognome" name="cognome" required aria-label="Inserisci il tuo cognome">
+                </div>
+                <div class="inputGroup">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required aria-label="Inserisci il tuo indirizzo email">
+                </div>
+                <div class="inputGroup">
+                    <label for="messaggio">Messaggio</label>
+                    <textarea id="messaggio" name="messaggio" rows="4" required
+                        aria-label="Scrivi il tuo messaggio"></textarea>
+                </div>
+                <div class="privacyPolicy">
+                    <input type="checkbox" id="privacy" name="privacy" checked required>
+                    <label for="privacy">Accetto la politica sulla privacy</label>
+                </div>
+                <button type="submit" class="submit-btn">Invia</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- SEZIONE FOOTER -->
+    <footer>
+        <div class="footer-left">
+            <p>GestionApp - Software ERP &copy;</p>
+            <p>La gestione della tua azienda in un click!</p>
+            <p>Partita IVA: IT0123456789</p>
+            <p>Bari, Italia</p>
+            <p>Email: <a href="mailto:gestionapp@pec.it">gestionapp@pec.it</a></p>
+        </div>
+        <div class="footer-center">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="iNostriPrezzi.html">I Nostri Prezzi</a></li>
+                <li><a href="chiSiamo.html">Chi Siamo</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contattaci.html">Contattaci</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <form action="../templates/grazie.html" method="POST">
+                <label for="newsletter">Iscriviti alla nostra newsletter:</label>
+                <input type="email" id="newsletter" name="newsletter" placeholder="La tua email" required
+                    aria-label="Inserisci la tua email per iscriverti alla newsletter">
+                <button type="submit">Iscriviti</button>
+            </form>
+        </div>
+    </footer>
+
+</body>
+
+</html>

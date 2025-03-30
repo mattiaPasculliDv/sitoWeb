@@ -1,0 +1,918 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* BODY */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(244, 247, 251);
+    color: #333;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* HEADER */
+header {
+    background-color: rgba(0, 161, 255, 1);
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+/* Contenitore del logo */
+header {
+    background-color: rgba(0, 161, 255, 1);
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Usa questo per distribuire gli elementi orizzontalmente */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Contenitore del logo */
+header .logo {
+    display: flex;
+}
+
+/* Stile del logo */
+header .logo img {
+    width: 250px;
+    height: auto;
+}
+
+/* Contenitore del bottone */
+header .demo {
+    display: flex;
+    justify-content: center; /* Allinea il bottone al centro */
+    flex-grow: 1; /* Permette al bottone di espandersi e centralizzarsi */
+    text-align: center;
+}
+
+/* Stile del bottone */
+#btn-demo {
+    background-color: rgb(255, 127, 0);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Effetto hover */
+#btn-demo:hover {
+    transform: scale(1.1);
+    background-color: rgb(230, 115, 0);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* NAVBAR*/
+
+/* Navbar con striscia bianca sottile separatrice */
+nav {
+    background-color: rgb(56, 182, 255);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+    border-top: 2px solid rgb(255, 255, 255); /* Aggiungi la striscia bianca sottile tra header e navbar */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgb(0, 123, 181);
+    transform: scale(1.05); /* Effetto di ingrandimento al passaggio del mouse */
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* PRESENTAZIONE - SEZIONE */
+
+.presentazione {
+    background-image: url('../images/presentazione.jpg');
+    background-size: cover; /* Fai sì che l'immagine copra tutta la sezione */
+    background-position: center;
+    padding: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 1.6;
+    border-radius: 15px;
+    max-width: 1100px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Effetto hover per la sezione Presentazione */
+.presentazione:hover {
+    background-color: rgba(0, 161, 255, 0.1);
+    transform: scale(1.03);     /* Ingrandimento leggero al passaggio del mouse */
+}
+
+/* Classe per h1 personalizzati */
+.h1-styled {
+    background-color: rgb(244, 247, 251);
+    padding: 60px 20px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    border-radius: 15px;
+    max-width: 1100px;
+    margin: 40px auto;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Effetto hover */
+.h1-styled:hover {
+    background-color: rgba(0, 161, 255, 0.1);
+    transform: scale(1.03);
+}
+
+/* Modifica lo stile specifico per h1 */
+.h1-styled h1 {
+    font-size: 32px;
+    color: #00a1ff;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Titolo della HomePage*/
+
+h1 {
+    background-color: rgb(244, 247, 251);
+    font-size: 28px;
+    padding: 30px 20px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+
+/* Titolo "Presentazione" */
+.presentazione h3 {
+    font-size: 32px;
+    color: rgba(0, 161, 255, 1);
+    margin-bottom: 20px;
+    font-weight: 700;
+    position: relative;
+}
+
+/* Descrizione sotto il titolo */
+.presentazione p {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* SEZIONE CARATTERISTICHE SERVIZI PRINCIPALI */
+
+#caratteristiche {
+    background-color: rgb(244, 247, 251);
+    padding: 60px 20px;
+    text-align: center;
+    color: #333;
+    border-radius: 15px;
+    max-width: 1100px;
+    margin: 40px auto;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#caratteristiche:hover {
+    background-color: rgba(0, 161, 255, 0.1);
+    transform: scale(1.03);
+}
+
+#caratteristiche h2 {
+    font-size: 32px;
+    color: rgba(0, 161, 255, 1)
+
+;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Contenitore delle caratteristiche */
+.listaCaratteristiche {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* Stile per ogni elemento di caratteristica */
+.ogettoCaratteristiche {
+    background-color: rgb(255, 255, 255);
+    color: #333;
+    border: 2px solid rgb(0, 123, 255);
+    border-radius: 15px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.ogettoCaratteristiche img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.ogettoCaratteristiche h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.ogettoCaratteristiche p {
+    font-size: 14px;
+    color: #555;
+}
+
+.ogettoCaratteristiche:hover {
+    background-color: rgba(0, 161, 255, 0.1);
+    transform: scale(1.03);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* SEZIONE PIANI TARIFFARI */
+
+.prezzi {
+    background-color: rgb(244, 247, 251);
+    padding: 60px 20px;
+    text-align: center;
+    color: #333;
+    border-radius: 15px;
+    max-width: 1100px;
+    margin: 40px auto;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.prezzi:hover {
+    background-color: rgba(0, 161, 255, 0.1);
+    transform: scale(1.03);
+}
+
+.prezzi h3 {
+    font-size: 32px;
+    color: rgba(0, 161, 255, 1);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Contenitore dei piani tariffari */
+.pianiTariffari {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* Stile per ogni piano tariffario */
+.pianoTariffario {
+    background-color: rgb(255, 255, 255);
+    color: #333;
+    border: 2px solid rgb(0, 123, 255);
+    border-radius: 15px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    min-width: 280px;
+}
+
+.pianoTariffario:hover {
+    background-color: #00a2ff56;
+    border-color: rgba(0, 123, 255, 0.8);
+    transform: scale(1.1); /* Ingrandisce il piano quando il mouse passa sopra */
+    z-index: 10;     /* Fa sì che il piano sia in primo piano rispetto agli altri */
+
+}
+
+/* Stile di base per i piani tariffari */
+.pianoTariffario ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;  /* Rimuove i pallini */
+}
+
+.pianoTariffario ul li {
+    font-family: Arial, sans-serif;
+    padding: 5px 0;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* Spunta verde (✔) */
+.pianoTariffario ul li .verde:before {
+    content: '\2714'; /* Codice per la spunta (✔) */
+    color: rgb(0, 128, 0);
+    margin-right: 10px;
+}
+
+/* X rossa (❌) */
+.pianoTariffario ul li .rossa:before {
+    content: '\2716';/* Codice per la X (❌) */
+    color: rgb(255, 0, 0);
+    margin-right: 10px;
+}
+
+/* Nome del piano */
+.nomePiano {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(0, 123, 255);
+    margin-bottom: 20px;
+}
+
+/* Prezzo */
+
+.prezzo {
+    font-size: 36px;
+    color: rgb(0, 128, 0);
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Tasto Scopri di più */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.pianoTariffario:hover .overlay {
+    display: block;
+}
+
+/* Stile per il tasto Scopri di più */
+.btn-discover {
+    background-color: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-discover:hover {
+    background-color: rgb(0, 86, 179);
+    color: rgb(255, 255, 255);
+}
+
+.dettagli {
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* Stile del link che appare come un bottone */
+.btn-link {
+    text-decoration: none;   /* Rimuove la sottolineatura dal link */
+    padding: 10px 20px;
+    background-color: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;     /* Aggiunge un'animazione dolce al cambio di colore */
+    margin-left: 10px;
+    text-align: center;
+}
+
+/* Effetto hover per cambiare il colore di sfondo quando il mouse passa sopra */
+.btn-link:hover {
+    background-color: rgb(0, 86, 179);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* SEZIONE RECENSIONI */
+
+.recensioni {
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    color: rgb(51, 51, 51);
+    font-size: 18px;
+    line-height: 1.6;
+    border-radius: 15px;
+    max-width: 1100px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ombre */
+    transition: all 0.3s ease;   /* Transizione per gli effetti hover */
+
+}
+
+/* Effetto hover per la sezione Recensioni */
+.recensioni:hover {
+    background-color: rgba(0, 161, 255, 0.122);
+    transform: scale(1.03); /* Leggero ingrandimento */
+}
+
+/* Titolo "Recensioni" */
+.recensioni h3 {
+    font-size: 32px;
+    color: rgba(0, 161, 255, 1);
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+}
+
+.recensioni h5 {
+    font-size: 18px;
+    color: rgb(53, 53, 53);
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+}
+
+/* Contenitore recensioni */
+.recensioni-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap; /* Per rendere il layout reattivo su schermi più piccoli */
+}
+
+/* Stile per ogni recensione */
+.recensione {
+    background-color: rgb(255, 255, 255);
+    color: #333;
+    border: 2px solid rgb(0, 123, 255);
+    border-radius: 15px;
+    padding: 20px;
+    width: 22%;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.recensione:hover {
+    background-color: rgba(0, 162, 255, 0.337);
+    border-color: rgba(0, 123, 255, 0.8);
+}
+
+/* Immagine recensione */
+.img-recensione {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover; /* Per fare in modo che l'immagine non distorca */
+    margin-bottom: 15px;
+}
+
+/* Titolo recensione */
+.recensione h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+    margin-bottom: 10px;
+}
+
+
+/* Sottotitolo recensione */
+.recensione h5 {
+    font-size: 18px;
+    color: rgba(0, 161, 255, 1)
+
+;
+    margin-bottom: 15px;
+}
+
+/* Descrizione recensione */
+.recensione p {
+    font-size: 16px;
+    color: rgb(85, 85, 85);
+    /* Colore del testo più chiaro */
+    text-align: justify;
+    margin: 0;
+}
+
+/* Stile per le stelle */
+.stelle {
+    margin-bottom: 10px;
+}
+
+.stella {
+    color: rgb(255, 204, 0);
+    /* Colore giallo per le stelle piene */
+    font-size: 20px;
+}
+
+/* Stelle vuote */
+.stella:not(:last-child) {
+    margin-right: 5px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+/* SEZIONE CHI SIAMO */
+.chiSiamo {
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    color: rgb(51, 51, 51);
+    font-size: 18px;
+    line-height: 1.6;
+    border-radius: 15px;
+    max-width: 1100px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+/* Effetto hover per ogni blocco */
+.chiSiamo:hover {
+    background-color: rgba(0, 161, 255, 0.122);
+    transform: scale(1.03); /* Leggero ingrandimento */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);/* Aumento della shadow */
+}
+
+/* Titolo principale */
+.chiSiamo h3 {
+    font-size: 32px;
+    color: rgba(0, 161, 255, 1)
+
+;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+}
+
+
+/* Titoli h4 (sezioni interne) */
+.chiSiamo h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(0, 123, 255);
+}
+
+/* Paragrafi alternati */
+.chiSiamo .sinistra,
+.chiSiamo .destra {
+    max-width: 600px;
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Paragrafo sinistra (testo allineato a sinistra) */
+.chiSiamo .sinistra {
+    text-align: left;
+    margin-right: auto;
+}
+
+/* Paragrafo destra (testo allineato a destra) */
+.chiSiamo .destra {
+    text-align: right;
+    margin-left: auto;
+}
+
+/* Paragrafi */
+.chiSiamo p {
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Ingrandimento al passaggio del mouse sui paragrafi */
+.chiSiamo .sinistra:hover,
+.chiSiamo .destra:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Stile per il paragrafo al passaggio del mouse */
+.chiSiamo p:hover {
+    color: rgba(0, 161, 255, 1);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* FOOTER */
+
+footer {
+    background-color: rgba(0, 161, 255, 1);
+    color: white;
+    padding: 30px 0;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer .footer-left,
+footer .footer-center,
+footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+    width: 30%;
+}
+
+footer .footer-center ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .footer-center ul li {
+    margin: 8px 0;
+}
+
+footer .footer-center ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s;
+}
+
+footer .footer-center ul li a:hover {
+    color: rgb(255, 215, 0);
+}
+
+footer .footer-right form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-right label {
+    margin-bottom: 5px;
+}
+
+footer .footer-right input {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 4px;
+    border: 1px solid rgb(221, 221, 221);
+    font-size: 14px;
+}
+
+footer .footer-right button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(255, 204, 0);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+footer .footer-right button:hover {
+    background-color: rgb(255, 170, 0);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* Contenitore del form */
+.contactForm {
+    background-color: rgb(244, 247, 251);
+    padding: 60px 20px;
+    text-align: center;
+    color: #333;
+    border-radius: 15px;
+    max-width: 800px;  /* Imposta una larghezza più ristretta */
+    width: 100%;  /* Consente al form di adattarsi a diverse larghezze del contenitore */
+    margin: 40px auto;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Resto del codice invariato */
+.inputGroup {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.inputGroup label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid rgb(204, 204, 204);
+    box-sizing: border-box;
+}
+
+.privacyPolicy {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.submit-btn {
+    background-color: rgba(0, 161, 255, 1);
+    color: rgb(255, 255, 255);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: rgb(0, 123, 181);
+}
+
+.contact-form:hover {
+    background-color: rgba(0, 161, 255, 0.1);
+    transform: scale(1.03);
+}
+
+
+/* STILE PER PAGINA DI RINGRAZIAMENTO */
+.grazie {
+    background-color: rgb(244, 247, 251);
+    padding: 60px 20px;
+    text-align: center;
+    color: #333;
+    border-radius: 15px;
+    max-width: 1100px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grazieTitolo {
+    font-size: 36px;
+    color: rgba(0, 161, 255, 1);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.grazieSottotitolo {
+    font-size: 20px;
+    color: rgb(102, 102, 102);
+    margin-bottom: 40px;
+}
+
+.btn {
+    background-color: rgba(0, 161, 255, 1);
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(0, 137, 208);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* -- GESTIONE DELLO STILE DELLE NEWS */
+
+/* Contenitore articoli */
+.articoli {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 10%;
+}
+
+/* Singolo articolo */
+.nuovoArticolo {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nuovoArticolo:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.nuovoArticolo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.nuovoArticolo h2 {
+    font-size: 22px;
+    color: rgb(51, 51, 51);
+    margin: 15px;
+    text-align: center;
+}
+
+.nuovoArticolo p {
+    font-size: 16px;
+    color: rgb(85, 85, 85);
+    margin: 0 15px 20px;
+    text-align: center;
+}
+
+.nuovoArticolo a {
+    display: block;
+    text-decoration: none;
+}
+
+/* Gestione dei singoli articoli nelle singole pagine Html */
+
+.article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.article .article-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.article .article-title {
+    font-size: 24px;
+    color: rgb(51, 51, 51);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.article .article-description {
+    font-size: 16px;
+    color: rgb(85, 85, 85);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
